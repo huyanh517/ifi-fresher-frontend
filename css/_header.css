@@ -1,3 +1,107 @@
-.header__offers a{
-    text-decoration: none;
+header {
+  background: #212121;
+  height: 2.90635rem;
+}
+
+.header__offers {
+  background: #84c639;
+  height: 2.9063rem;
+}
+
+.header__offers a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.1875rem;
+}
+
+.header__search {
+  padding-left: 9.375rem;
+}
+
+.header__search input {
+  padding: 0.625rem;
+  margin-top: 2px;
+  width: 64.5%;
+  height: 2.7rem;
+  outline: none;
+  border: 1px solid #999;
+  color: #212121;
+  font-size: 0.875rem;
+}
+
+.btn-search {
+  background: #fa1818;
+  padding: 0.55rem 2rem;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+}
+
+.header__cart {
+  height: 2.90635rem;
+  color: #fff;
+}
+
+.cart-box {
+  padding: 7px 14px;
+  font-size: 14px;
+  border: 1px solid #84c639;
+}
+
+.cart-box:hover {
+    cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+i {
+  font-size: 0.875rem;
+}
+
+.dropdown {
+    margin-left: 8rem !important;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.dropdown-menu {
+    top: 95%;
+    left: -105px;
+    min-width: 9rem;
+}
+
+.dropdown-item {
+    text-align: center;
+    font-size: 0.875rem;
+    transition: 500ms;
+}
+
+.dropdown-item:hover {
+    color: #fa1818;
+}
+
+.header__contact {
+    padding-left: 30px;
+    background: #fa1818;
+    height: 2.9063rem;
+}
+
+.header__contact a {
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
