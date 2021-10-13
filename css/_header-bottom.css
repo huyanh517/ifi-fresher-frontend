@@ -1,0 +1,180 @@
+.header__bot {
+  margin-top: 10px;
+}
+
+.logo h1 a span {
+  font-size: 16.2px;
+  color: #fa1818;
+}
+
+.logo h1 a {
+  display: block;
+  font-size: 54px;
+  color: #212121;
+  background: url("/assets/logo.png") 50px 93px;
+  background-repeat: no-repeat;
+  line-height: 1;
+  height: 167px;
+}
+
+@media all and (min-width: 767px) {
+  .logo {
+    padding-left: 15px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .logo {
+    padding-left: 30%;
+  }
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li a {
+  transition: 500ms;
+}
+
+.menu li:hover > a {
+  color: #fa1818;
+}
+
+.menu li i {
+  padding: 0 20px;
+}
+
+@media all and (max-width: 1200px) {
+  .menu li i {
+    padding: 0 15px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .menu li i {
+    padding: 0 3px;
+  }
+}
+
+.menu li a {
+  color: #212121;
+}
+
+.contact_detail {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media all and (max-width: 991px) {
+  .contact_detail {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .contact_detail {
+    flex-direction: column;
+  }
+}
+
+.contact_detail i {
+  padding: 0 10px;
+}
+
+.contact_detail li a {
+  color: #212121;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+}
+
+.menu-left {
+  flex: 0 0 21%;
+}
+
+.menu-left ul li {
+  position: relative;
+}
+
+.menu-left ul li a {
+  font-size: 14px;
+  display: block;
+  padding: 10px 0px 10px 40px;
+  color: #212121;
+  border-bottom: 1px dotted #cdcdcd;
+}
+
+.menu-left ul li a .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.menu-left ul li:hover {
+  background: #84c639;
+}
+
+.menu-left ul {
+  border-top: 1px solid #b58f62;
+  background-color: #f5f5f5;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.mega-menu {
+  position: absolute;
+  opacity: 0;
+  top: 80%;
+  left: 15%;
+  width: 132px;
+  height: 0;
+  transition: 200ms all ease-in-out;
+}
+
+.mega-menu ul li a {
+  padding: 10px;
+  border: 0;
+  transition: 500ms;
+}
+
+.mega-menu ul li:hover > a{
+  color: #fa1818;
+}
+
+.mega-menu ul {
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.mega-menu ul li:hover {
+  background: none;
+}
+
+.menu-left ul li:hover .mega-menu{
+  opacity: 1;
+  width: 132px;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  z-index: 10;
+  
+  box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
