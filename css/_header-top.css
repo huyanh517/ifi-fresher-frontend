@@ -5,7 +5,7 @@
 }
 .row-header {
   justify-content: space-between;
-  background: #212121
+  background: #212121;
 }
 @media all and (max-width: 991px) and (min-width: 768px) {
   .row-header {
@@ -207,7 +207,14 @@ i {
 
 .dropdown:hover > .dropdown-menu {
   display: block;
+  top: 95%;
+  right: 0;
+  min-width: 130px;
+  text-align: center;
+  margin: 0;
+  left: auto;
 }
+
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
@@ -219,7 +226,9 @@ i {
   transition: 500ms;
 }
 
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
   color: #fa1818;
 }
 
@@ -282,5 +291,3 @@ i {
     font-size: 0.9rem;
   }
 }
-
-
