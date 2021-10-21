@@ -6,5 +6,4 @@ $(document).ready(function () {
     $.get('/components/header.html', data => { $header.append(data) })
     $.get('/components/main/main-list.html', data => { $main.append(data) })
     $.get('/components/footer.html', data => { $footer.append(data) })
-
 });

@@ -196,6 +196,7 @@ function initCartFromStorage() {
         let $total = $(totalCart)
         for (let key in cart) {
             let item = cart[key]
+            console.log(item.quantity)
             const html = `
             <li style="margin-bottom: 20px; display: flex; border: 1px solid #ccc; padding: 10px; border-radius: 3px;box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);"
             class="justify-content-between align-items-center rowItem" id=${item.id}>
@@ -221,7 +222,7 @@ function initCartFromStorage() {
                                 >×</button>
 
                 <div class="price" style="color: #333;">
-                    <span value=${item.price}>$${Number(item.price * item.quantity).toFixed(2)}</span>
+                    <span value="${Number(item.price * item.quantity).toFixed(2)}">$${Number(item.price * item.quantity).toFixed(2)}</span>
                 </div>
                 </li>
                 `

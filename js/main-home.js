@@ -234,7 +234,7 @@ function initCartFromStorage() {
                                 >×</button>
 
                 <div class="price" style="color: #333;">
-                    <span value=${item.price}>$${Number(item.price * item.quantity).toFixed(2)}</span>
+                    <span value="${Number(item.price * item.quantity).toFixed(2)}">$${Number(item.price * item.quantity).toFixed(2)}</span>
                 </div>
                 </li>
                 `
