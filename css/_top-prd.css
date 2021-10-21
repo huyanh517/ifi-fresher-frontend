@@ -62,4 +62,17 @@
 	animation-direction: alternate;
 }
 
+.img {
 
+}
+
+@media all and (max-width: 992px) {
+    .img {
+        flex-direction: column;
+    }
+
+    .img-div {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
