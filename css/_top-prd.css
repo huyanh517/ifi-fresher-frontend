@@ -1,0 +1,65 @@
+.fresh-vegetables h3 {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.fresh-vegetables h3::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 8%;
+  bottom: 0%;
+  left: 46%;
+  background: #fa1818;
+}
+
+.fresh-vegetables {
+    padding: 60px 0;
+}
+
+.fresh-vegetables .row1 {
+    margin-top: 50px;
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+.fresh-vegetables ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.fresh-vegetables ul li a {
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 700ms;
+}
+
+.fresh-vegetables ul li a:hover {
+    color: #84C639;
+}
+
+.text-offer h4 {
+    margin-top: 30px;
+    text-transform: capitalize;
+    text-align: right;
+    font-size: 19px;
+}
+
+@keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+  }
+.text-offer h4 span {
+    color: #fa1818;
+	animation-name: blinker;
+	animation-duration: 0.6s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+
+
