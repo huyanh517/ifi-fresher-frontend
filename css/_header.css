@@ -1,2 +1,17 @@
 @import '_header-top.css';
 @import '_header-bottom.css';
+
+.cart-total button {
+    font-size: 14px;
+    color: #fff;
+    background: #84c639;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 30%;
+    text-transform: uppercase;
+    padding: .5em 0;
+    outline: none;
+    transition: 500ms all ease;
+}

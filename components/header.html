@@ -1,89 +1,110 @@
-<header>
-    <!--  Header-Top  -->
-    <div class="container-fluid header__top">
-        <div class="row row-header">
-            <div class="col-lg-2 col-md-3 col-sm-6 header__offers d-flex align-items-center justify-content-center">
-                <a href="#">Today's special Offers !</a>
-            </div>
-            <div class="col-lg-5 col-md-6 col-sm-6 col-12 header__search">
-                <form action="#" method="post">
-                    <input type="text" placeholder="Search a product..." />
-                    <button type="submit" class="btn btn-danger btn-search" aria-label="search">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-8 cart-col">
-                <div class="header__cart d-flex justify-content-start align-items-center">
-                    <div class="d-flex align-items-center cart-box">
-                        <span>View Your Cart</span>
-                        <i class="fas fa-shopping-cart ml-3"></i>
-                    </div>
-                    <div class="dropdown">
-                        <i class="fas fa-user user" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                        </i>
-                        <i class="fas fa-caret-down"></i>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Login</a>
-                            <a class="dropdown-item" href="#">Signup</a>
+<!--  Header-Top  -->
+<div class="container-fluid header__top">
+    <div class="row row-header">
+        <div class="col-lg-2 col-md-3 col-sm-6 header__offers d-flex align-items-center justify-content-center">
+            <a href="#">Today's special Offers !</a>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-6 col-12 header__search">
+            <form action="#" method="post">
+                <input type="text" placeholder="Search a product..." />
+                <button type="submit" class="btn btn-danger btn-search" aria-label="search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-8 cart-col">
+            <div class="header__cart d-flex justify-content-start align-items-center">
+                <div class="d-flex align-items-center cart-box">
+                    <span>View Your Cart</span>
+                    <i class="fas fa-shopping-cart ml-3"></i>
+                    <div class="cart hide-cart">
+                        <div style="text-align: right;">
+                            <button type="button" class="cart-close" style="  
+                            margin: -12px -10px 0;
+                            background: #333;
+                            color: #333;
+                            padding: 10px;
+                            background: 0;
+                            border: 0;
+                            font-size: 18px;
+                            cursor: pointer;
+                            font-weight: bold;">×</button>
+                        </div>
+                        <ul id='cart-box'>
+
+                        </ul>
+                        <div class="cart__total d-flex justify-content-around align-items-center mt-4">
+                            <p>Subtotal: <span value="">$254 USD</span></p>
+                            <div class="cart__btn">
+                                <button class="checkout">check out with</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div
-                class="col-lg-1 col-md-3 col-sm-6 col-4 header__contact d-flex justify-content-center align-items-center">
-                <a href="#">Contact Us</a>
-            </div>
-        </div>
-    </div>
-
-    <!--  Header-Bottom  -->
-    <div class="header__bot">
-        <div class="container">
-            <div class="row">
-                <div class="logo col-lg-2 col-md-2 col-12">
-                    <h1>
-                        <a href="#">
-                            <span>GROCERY</span>
-                            <p>
-                                STORE
-                            </p>
-
-                        </a>
-                    </h1>
-                </div>
-
-                <div class="breadcumb col-lg-5 col-md-10 col-12">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">Events</a>
-                            <i>/</i>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                            <i>/</i>
-                        </li>
-                        <li>
-                            <a href="#">Best Deals</a>
-                            <i>/</i>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-5 col-md-10 col-12 contact">
-                    <ul class="contact_detail">
-                        <li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-                        <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="#">store@grocery.com</a></li>
-                    </ul>
+                <div class="dropdown">
+                    <i class="fas fa-user user" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    </i>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Login</a>
+                        <a class="dropdown-item" href="#">Signup</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-1 col-md-3 col-sm-6 col-4 header__contact d-flex justify-content-center align-items-center">
+            <a href="#">Contact Us</a>
+        </div>
     </div>
-</header>
+</div>
+
+<!--  Header-Bottom  -->
+<div class="header__bot">
+    <div class="container">
+        <div class="row">
+            <div class="logo col-lg-2 col-md-2 col-12">
+                <h1>
+                    <a href="#">
+                        <span>GROCERY</span>
+                        <p>
+                            STORE
+                        </p>
+
+                    </a>
+                </h1>
+            </div>
+
+            <div class="breadcumb col-lg-5 col-md-10 col-12">
+                <ul class="menu">
+                    <li>
+                        <a href="#">Events</a>
+                        <i>/</i>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                        <i>/</i>
+                    </li>
+                    <li>
+                        <a href="#">Best Deals</a>
+                        <i>/</i>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-5 col-md-10 col-12 contact">
+                <ul class="contact_detail">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i><a href="#">store@grocery.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="main">
     <button class="button" type="button">
@@ -91,45 +112,45 @@
     </button>
     <div class="menu-left">
         <ul>
-            <li><a href="#">Branded Foods</a></li>
-            <li><a href="#">House Holds</a></li>
+            <li><a class="menuLink" href="/page/home.html">Branded Foods</a></li>
+            <li><a class="menuLink" href="/page/home.html">House Holds</a></li>
             <li>
-                <a href="#">Veggies & Fruits
+                <a class="menuLink" href="/page/home.html">Veggies & Fruits
                     <span class="arrow"></span>
                 </a>
                 <div class="mega-menu">
                     <ul>
-                        <li><a href="#">Vegetables</a></li>
-                        <li><a href="#">Fruits</a></li>
+                        <li><a class="menuLink" href="/page/home.html">Vegetables</a></li>
+                        <li><a class="menuLink" href="/page/home.html">Fruits</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#">Short Codes</a></li>
+            <li><a class="menuLink" href="/page/home.html">Kitchen</a></li>
+            <li><a class="menuLink" href="/page/home.html">Short Codes</a></li>
             <li>
-                <a href="#">Beverages
+                <a class="menuLink" href="/page/home.html">Beverages
                     <span class="arrow"></span>
                 </a>
                 <div class="mega-menu">
                     <ul>
-                        <li><a href="#">Soft Drinks</a></li>
-                        <li><a href="#">Juices</a></li>
+                        <li><a class="menuLink" href="/page/home.html">Soft Drinks</a></li>
+                        <li><a class="menuLink" href="/page/home.html">Juices</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">Petfood</a></li>
+            <li><a class="menuLink" href="/page/home.html">Petfood</a></li>
             <li>
-                <a href="#">Frozen Foods
+                <a class="menuLink" href="/page/home.html">Frozen Foods
                     <span class="arrow"></span>
                 </a>
                 <div class="mega-menu">
                     <ul>
-                        <li><a href="#">Frozen Snacks</a></li>
-                        <li><a href="#">Frozen Nonvegs</a></li>
+                        <li><a class="menuLink" href="/page/home.html">Frozen Snacks</a></li>
+                        <li><a class="menuLink" href="/page/home.html">Frozen Nonvegs</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">Bread & Bakery</a></li>
+            <li><a class="menuLink" href="/page/home.html">Bread & Bakery</a></li>
         </ul>
     </div>
     <div class="slider owl-carousel owl-theme">

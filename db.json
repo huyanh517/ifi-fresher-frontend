@@ -12,5 +12,11 @@
         { "id": "VF_F", "title": "Fruits" }
       ]
     }
+  ],
+  "products": [
+    {"id": "0", "title": "Knorr Instant Soup (100 Gm)","new_price": "7.99", "old_price": "10.00", "tag": "Food", "img_src": "/assets/offer1.png", "img_tag": "/assets/tag.png"},
+    {"id": "1", "title": "Chings Noodles (75 Gm)","new_price": "11.99", "old_price": "15.00", "tag": "Food", "img_src": "/assets/offer2.png", "img_tag": null},
+    {"id": "2", "title": "Lahsun Sev (150 Gm)","new_price": "8.00", "old_price": "10.00", "tag": "Food", "img_src": "/assets/offer3.png", "img_tag": "/assets/sell.png"},
+    {"id": "3", "title": "Premium Bake Rusk (300 Gm)","new_price": "9.00", "old_price": "11.00", "tag": "Food", "img_src": "/assets/offer4.png", "img_tag": "/assets/sell.png"}
   ]
 }

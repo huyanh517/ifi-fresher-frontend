@@ -5,7 +5,7 @@ $(document).ready(() => {
         nav: false,
         mouseDrag: false,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         autoplaySpeed: 1000,
         responsive: {
             0: {
@@ -38,8 +38,6 @@ $(document).ready(() => {
     $(window).resize(checkWidth)
 
     // HEADER SCROLL
-    $(window).scroll(checkHeight)
-
     function checkHeight() {
         let windowHeight = $(window).scrollTop()
         if (windowHeight > 210) {
@@ -52,4 +50,17 @@ $(document).ready(() => {
             })
         }
     }
+    $(window).scroll(checkHeight)
+    
+    // CART
+    $('.cart-box').click(() => {
+        $('.cart').css('display', 'block')
+    })
+
+    $('.cart-close').click((event) => {
+        event.stopPropagation()
+        $('.cart').css('display', 'none')
+    })
+
+    $(window).click()
 })

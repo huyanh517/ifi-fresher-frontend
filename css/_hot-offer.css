@@ -1,0 +1,149 @@
+main {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hot-offers {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f5f5f5;
+}
+
+.hot-offers .offer__title h3 {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.hot-offers .offer__title h3::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 8%;
+  bottom: 0%;
+  left: 46%;
+  background: #fa1818;
+}
+
+.scroll-top span {
+  z-index: 9999;
+  display: block;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  padding: 5px 10px;
+  background: #fa1818;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.scroll-top span:hover {
+    cursor: pointer;
+}
+
+.scroll-top span i {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.list-product {
+  margin-top: 60px;
+}
+
+/* HOT OFFER */
+.offer__item {
+  position: relative;
+}
+
+.offer__tag1 {
+  position: absolute;
+  top: 0;
+  right: 12%;
+}
+
+.offer__tag {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.offer__card {
+  padding: 15px;
+  height: 100%;
+  border: 1px solid #d7d7d7;
+}
+
+.offer__box {
+  height: 100%;
+  border: 1px solid #BEBEBE;
+  padding: 10px;
+  background: #fff;
+}
+
+.offer__content .offer__body a {
+  display: block;
+  text-align: center;
+}
+
+.offer__body p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #212121;
+  text-transform: capitalize;
+}
+
+.offer__body h4 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.offer__body h4 span {
+  text-decoration: line-through;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.offer__btn {
+  text-align: center;
+  width: 77%;
+  margin: 20px auto 10px auto;
+}
+
+.offer__btn button {
+  font-size: 14px;
+  color: #fff;
+  background: #FA1818;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 8px 0;
+  outline: none;
+  box-shadow: none;
+  transition: 500ms;
+}
+
+.offer__btn button:hover {
+  background: #84C639;
+}
+
+@media all and (max-width: 991px) {
+  .offer__item {
+    margin-bottom: 20px;
+  }
+  
+  .hot-offers {
+    padding-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .list-product {
+    justify-content: center;
+  }
+}
